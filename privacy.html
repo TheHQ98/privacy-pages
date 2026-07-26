@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>记点 Coins · 隐私政策 / Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f7f7f8;
+      --surface: #ffffff;
+      --text: #1d1d1f;
+      --secondary: #56565c;
+      --link: #005fcc;
+      --border: #d8d8dc;
+      --notice: #f0f3ff;
+      --notice-border: #8191d9;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 32px auto 64px;
+      padding: 32px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+    }
+
+    h1 {
+      margin: 0 0 4px;
+      font-size: clamp(1.75rem, 5vw, 2.25rem);
+      line-height: 1.25;
+    }
+
+    h2 {
+      margin: 2.25rem 0 0.65rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+
+    h3 {
+      margin: 1.4rem 0 0.35rem;
+      font-size: 1rem;
+    }
+
+    p { margin: 0.7rem 0; }
+    ul { margin: 0.55rem 0; padding-left: 1.4rem; }
+    li { margin: 0.45rem 0; }
+
+    a {
+      color: var(--link);
+      text-underline-offset: 0.15em;
+    }
+
+    .meta {
+      margin: 0.25rem 0;
+      color: var(--secondary);
+      font-size: 0.95rem;
+    }
+
+    .language-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 1.25rem 0 2rem;
+    }
+
+    .language-nav a {
+      display: inline-block;
+      padding: 7px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .notice {
+      margin: 1.25rem 0;
+      padding: 14px 16px;
+      background: var(--notice);
+      border-left: 4px solid var(--notice-border);
+      border-radius: 8px;
+    }
+
+    .divider {
+      margin: 4rem 0;
+      border: 0;
+      border-top: 2px solid var(--border);
+    }
+
+    .contact {
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      margin-top: 3rem;
+      color: var(--secondary);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 560px) {
+      main {
+        width: 100%;
+        margin: 0;
+        padding: 24px 20px 40px;
+        border: 0;
+        border-radius: 0;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #111114;
+        --surface: #1c1c1e;
+        --text: #f5f5f7;
+        --secondary: #c2c2c7;
+        --link: #6eb4ff;
+        --border: #3a3a3c;
+        --notice: #242a42;
+        --notice-border: #9ba9f2;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <nav class="language-nav" aria-label="Language">
+    <a href="#zh">中文</a>
+    <a href="#en" lang="en">English</a>
+  </nav>
+
+  <section id="zh">
+    <h1>记点（Coins）隐私政策</h1>
+    <p class="meta">开发者：Feng Chenhao</p>
+    <p class="meta">生效及最后更新日期：2026 年 7 月 26 日</p>
+
+    <div class="notice">
+      <strong>摘要：</strong>记点是一款本地优先的个人记账应用。开发者不运营用于存储你账目数据的服务器，也未在应用中集成广告、跨应用追踪或第三方分析 SDK。部分可选功能会按照你的选择，把必要数据发送给 Apple Weather、你配置的 Git 服务、AI 服务商或汇率服务。具体范围如下。
+    </div>
+
+    <h2>1. 适用范围与开发者</h2>
+    <p>本政策适用于 iOS 应用“记点（Coins）”，说明应用如何处理账目、资产、图片、位置、配置和凭据等信息。应用由个人开发者 Feng Chenhao 提供。</p>
+    <p>除本政策明确说明的第三方服务外，开发者不接收或持有你的账本内容，也无法访问你自行配置的仓库、Git 访问令牌或 AI API Key。</p>
+
+    <h2>2. 在设备本地处理的数据</h2>
+    <p>应用的核心手动记账功能无需注册账号。以下数据默认保存在你的设备应用容器中：</p>
+    <ul>
+      <li><strong>账目数据：</strong>金额、收支类型、分类、备注、交易日期、币种、创建和更新时间以及删除标记。</li>
+      <li><strong>资产数据：</strong>资产名称、价格、分类、购买和结束日期、状态、卖出价格、备注以及图片版本。</li>
+      <li><strong>用户选择的图片：</strong>应用仅处理你通过系统照片选择器明确选择的图片。图片会在设备上进行抠图、缩放和重新编码，用作资产贴纸。</li>
+      <li><strong>应用设置和缓存：</strong>首次使用状态、同步配置、AI 提供商和模型、同步状态、汇率缓存，以及天气图标、温度和获取时间。</li>
+      <li><strong>编辑草稿：</strong>未完成的资产编辑内容可能临时保存在设备的 Application Support 目录中。</li>
+    </ul>
+    <p>开发者不会通过自有服务器收集这些本地数据。</p>
+
+    <h2>3. 可选功能及离开设备的数据</h2>
+
+    <h3>3.1 Gitea / GitHub 同步</h3>
+    <p>只有在你主动填写仓库信息和访问令牌后，同步功能才会启用。应用可能把以下内容写入你指定的 Gitea 或 GitHub 仓库：</p>
+    <ul>
+      <li>账目和资产的完整记录字段；</li>
+      <li>备注、时间戳、记录标识符和删除标记；</li>
+      <li>经过本地处理的资产贴纸图片；</li>
+      <li>同步所需的文件版本和提交历史。</li>
+    </ul>
+    <p>这些数据由你选择的仓库服务保存。Git 仓库可能长期保留提交历史，即使应用中已删除某条记录，历史提交、删除标记或远端图片仍可能继续存在。你负责管理仓库可见性、访问权限、保留期限和彻底删除。</p>
+    <p>GitHub 连接使用 HTTPS。自建 Gitea 的传输安全取决于你填写的服务器地址。如果使用 <code>http://</code> 而不是 <code>https://</code>，访问令牌和同步数据不会受到 TLS 加密保护，可能被同一网络中的其他方截获。强烈建议只使用可信的 HTTPS 服务器和私有仓库。</p>
+
+    <h3>3.2 AI 账单解析</h3>
+    <p>只有在你配置自己的 API Key 并主动运行 AI 解析功能时，应用才会把 OCR 提取的账单文本发送给你选择的 DeepSeek、OpenAI 或 Gemini。发送内容可能包括商户名称、金额、日期、账单文字、应用分类表、当前日期时间、所选模型和生成参数。</p>
+    <p>AI 服务的处理、日志、保留、模型改进和跨境传输规则由相应服务商的条款和隐私政策决定。开发者不会收到你的 API Key、请求正文或 AI 响应。使用前请查阅并接受所选服务商的政策；不配置或不调用该功能，就不会向 AI 服务商发送账单文本。</p>
+
+    <h3>3.3 Apple Weather 天气</h3>
+    <p>账本页面可显示当地天气。应用会请求“使用 App 期间”的粗略位置，并把该位置交给 Apple WeatherKit，以获取当前天气。应用不会把坐标写入自己的持久化数据；本地仅缓存天气图标、温度和获取时间。</p>
+    <p>Apple 对 WeatherKit 请求和相关数据的处理受 <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">Apple 隐私政策</a>约束。拒绝位置权限不会影响手动记账，天气信息将不显示。</p>
+
+    <h3>3.4 汇率查询</h3>
+    <p>录入非人民币资产时，应用可能向 Frankfurter 汇率服务发送基础货币代码和目标货币代码（CNY），用于换算汇率。请求不包含账目金额、资产名称、备注、图片或记录标识符。汇率及获取时间会缓存在设备本地。</p>
+
+    <h2>4. 系统权限</h2>
+    <ul>
+      <li><strong>位置：</strong>用于通过 Apple WeatherKit 获取当地天气，只请求使用期间的粗略位置。</li>
+      <li><strong>本地网络：</strong>用于连接你配置的局域网自建 Gitea 服务器。</li>
+      <li><strong>通知：</strong>用于在本机显示快捷指令记账结果。通知正文可能包含分类、金额和备注；是否在锁屏显示由你的 iOS 通知预览设置决定。</li>
+      <li><strong>照片选择：</strong>应用使用系统照片选择器处理你明确选中的图片，不会浏览你的整个照片图库。</li>
+    </ul>
+    <p>你可以在 iOS“设置”中撤回位置和通知权限。撤回相应权限后，核心手动记账功能仍可使用。</p>
+
+    <h2>5. 凭据与安全</h2>
+    <p>Gitea/GitHub 访问令牌以及 DeepSeek、OpenAI、Gemini API Key 保存在 iOS Keychain 中，并配置为仅本设备使用。应用界面不会再次显示已保存的完整凭据。</p>
+    <p>任何存储或网络传输都不存在绝对安全。请使用最小权限、可撤销的令牌，使用私有仓库和 HTTPS，并定期检查第三方账号的访问记录。</p>
+
+    <h2>6. 保留、删除与卸载</h2>
+    <ul>
+      <li><strong>单条记录：</strong>你可以在应用内删除账目和资产。启用同步时，删除可能以删除标记同步到仓库；Git 历史和远端图片不一定随之彻底移除。</li>
+      <li><strong>清空本地数据：</strong>应用内“清空本地数据”会删除本地账目、资产和资产贴纸图片，但可能保留应用配置、缓存、编辑草稿和 Keychain 凭据。</li>
+      <li><strong>移除凭据：</strong>请在“同步配置”和“AI 解析”页面分别移除令牌或 API Key。若希望彻底移除凭据，建议在卸载应用前执行这些操作。</li>
+      <li><strong>卸载应用：</strong>卸载通常会删除应用容器内的数据。iOS Keychain 项是否随卸载删除由系统行为决定，开发者无法保证，因此不应仅依赖卸载来清除凭据。</li>
+      <li><strong>远端数据：</strong>开发者无权访问或删除你自己的 Gitea/GitHub 仓库或 AI 服务账号。你需要在相应服务中删除仓库、提交历史、图片、日志或账号数据。</li>
+    </ul>
+
+    <h2>7. 广告、分析与追踪</h2>
+    <p>当前版本不包含广告 SDK、第三方分析 SDK或跨应用追踪功能，不访问广告标识符，也不会出售你的个人数据。开发者不使用账目、位置、图片或使用行为建立广告画像。</p>
+    <p>你主动使用的 Git、AI、Apple Weather 或汇率服务可能按照各自政策处理网络地址、账号标识、请求日志或你发送的内容；这些处理不由开发者控制。</p>
+
+    <h2>8. 隐私政策网页托管</h2>
+    <p>本隐私政策页面自身不包含 JavaScript、广告、分析代码或开发者设置的 Cookie。页面通过 GitHub Pages 托管；GitHub 可能按照其<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">隐私声明</a>处理访问日志和必要的网络信息。</p>
+
+    <h2>9. 儿童隐私</h2>
+    <p>本应用面向一般用户，并非专门面向 13 岁以下儿童。开发者不会有意通过自有服务器收集儿童个人信息。如果你认为存在儿童隐私问题，请通过下方邮箱联系。</p>
+
+    <h2>10. 你的选择与权利</h2>
+    <p>同步、AI、天气和通知均为可选功能。你可以不配置第三方服务、撤回系统权限、移除凭据、删除本地数据，并在相应第三方服务中管理远端数据。</p>
+    <p>由于开发者不持有你的账本、仓库或 AI 请求数据，开发者通常无法直接访问、更正或删除这些内容。如需处理第三方服务持有的数据，请联系对应服务商。有关应用本身的隐私问题，可以联系开发者。</p>
+
+    <h2>11. 政策变更</h2>
+    <p>如果应用功能或数据处理方式发生变化，本页面将更新内容和“最后更新日期”。重大变化可能同时在应用或版本说明中提示。</p>
+
+    <h2>12. 联系方式</h2>
+    <p class="contact">开发者：Feng Chenhao<br>邮箱：<a href="mailto:cnjosh90098@gmail.com">cnjosh90098@gmail.com</a></p>
+  </section>
+
+  <hr class="divider">
+
+  <section id="en" lang="en">
+    <h1>Coins Privacy Policy</h1>
+    <p class="meta">Developer: Feng Chenhao</p>
+    <p class="meta">Effective and last updated: July 26, 2026</p>
+
+    <div class="notice">
+      <strong>Summary:</strong> Coins is a local-first personal bookkeeping app. The developer does not operate a server that stores your ledger data, and the app contains no advertising, cross-app tracking, or third-party analytics SDKs. Optional features transmit limited data to Apple Weather, a Git service you configure, an AI provider you choose, or an exchange-rate service, as described below.
+    </div>
+
+    <h2>1. Scope and developer</h2>
+    <p>This policy applies to the iOS app Coins and explains how the app handles ledger entries, assets, images, location, settings, and credentials. Coins is provided by the individual developer Feng Chenhao.</p>
+    <p>Except for the third-party services described below, the developer does not receive or possess your ledger content and cannot access a repository, Git access token, or AI API key that you configure yourself.</p>
+
+    <h2>2. Data processed locally on your device</h2>
+    <p>The core manual bookkeeping features do not require an account. The following data is stored in the app container on your device by default:</p>
+    <ul>
+      <li><strong>Transactions:</strong> amount, income or expense type, category, note, transaction date, currency, creation and update timestamps, and deletion markers.</li>
+      <li><strong>Assets:</strong> asset name, price, category, purchase and end dates, status, sale price, note, and image version.</li>
+      <li><strong>Images you select:</strong> the app processes only images you explicitly select through the system photo picker. Images are isolated, resized, and re-encoded on device for use as asset stickers.</li>
+      <li><strong>Settings and caches:</strong> onboarding state, sync configuration, AI provider and model, sync status, exchange-rate cache, and cached weather symbol, temperature, and retrieval time.</li>
+      <li><strong>Editing drafts:</strong> unfinished asset information may be stored temporarily in the app's Application Support directory.</li>
+    </ul>
+    <p>The developer does not collect this local data through a developer-operated server.</p>
+
+    <h2>3. Optional features and data sent off device</h2>
+
+    <h3>3.1 Gitea / GitHub sync</h3>
+    <p>Sync is enabled only after you provide repository details and an access token. The app may write the following data to the Gitea or GitHub repository you select:</p>
+    <ul>
+      <li>Complete transaction and asset record fields;</li>
+      <li>Notes, timestamps, record identifiers, and deletion markers;</li>
+      <li>Locally processed asset sticker images;</li>
+      <li>File versions and commit history required for synchronization.</li>
+    </ul>
+    <p>This data is stored by the repository service you choose. Git repositories may retain commit history for a long time. Even after a record is deleted in the app, historical commits, deletion markers, or remote images may remain. You are responsible for repository visibility, access control, retention, and permanent deletion.</p>
+    <p>GitHub connections use HTTPS. Transport security for a self-hosted Gitea instance depends on the server URL you enter. If you use <code>http://</code> instead of <code>https://</code>, the access token and synchronized data are not protected by TLS and may be intercepted by others on the same network. Use a trusted HTTPS server and a private repository.</p>
+
+    <h3>3.2 AI bill parsing</h3>
+    <p>Only when you configure your own API key and actively run AI parsing does the app send OCR-extracted bill text to your selected provider: DeepSeek, OpenAI, or Gemini. The request may contain merchant names, amounts, dates, bill text, the app's category list, the current date and time, the selected model, and generation parameters.</p>
+    <p>The provider's terms and privacy policy govern its processing, logging, retention, model improvement, and international transfers. The developer does not receive your API key, request content, or AI response. Review and accept the selected provider's policy before use. If you do not configure or invoke this feature, no bill text is sent to an AI provider.</p>
+
+    <h3>3.3 Apple Weather</h3>
+    <p>The ledger screen can display local weather. The app requests approximate location while the app is in use and provides that location to Apple WeatherKit to obtain current weather. The app does not persist your coordinates; it caches only the weather symbol, temperature, and retrieval time.</p>
+    <p>Apple's handling of WeatherKit requests and related data is governed by the <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">Apple Privacy Policy</a>. Denying location permission does not affect manual bookkeeping; weather information will simply remain hidden.</p>
+
+    <h3>3.4 Exchange rates</h3>
+    <p>When recording a non-CNY asset, the app may send a base currency code and the target currency code (CNY) to the Frankfurter exchange-rate service. The request does not include transaction amounts, asset names, notes, images, or record identifiers. The rate and retrieval time are cached locally.</p>
+
+    <h2>4. System permissions</h2>
+    <ul>
+      <li><strong>Location:</strong> used to obtain local weather through Apple WeatherKit. Only approximate location while using the app is requested.</li>
+      <li><strong>Local network:</strong> used to connect to a self-hosted Gitea server on your local network.</li>
+      <li><strong>Notifications:</strong> used to show on-device results from bookkeeping Shortcuts. A notification may contain a category, amount, and note. Whether those details appear on the Lock Screen depends on your iOS notification preview settings.</li>
+      <li><strong>Photo selection:</strong> the app uses the system photo picker to process only images you explicitly select; it does not browse your entire photo library.</li>
+    </ul>
+    <p>You can withdraw location and notification permissions in iOS Settings. The core manual bookkeeping features remain available without these permissions.</p>
+
+    <h2>5. Credentials and security</h2>
+    <p>Gitea/GitHub access tokens and DeepSeek, OpenAI, and Gemini API keys are stored in the iOS Keychain and configured for use only on the current device. The app does not reveal a complete saved credential in its interface.</p>
+    <p>No storage or network transmission method is completely secure. Use minimum-scope, revocable tokens, private repositories, and HTTPS, and periodically review access activity in your third-party accounts.</p>
+
+    <h2>6. Retention, deletion, and uninstalling</h2>
+    <ul>
+      <li><strong>Individual records:</strong> you can delete transactions and assets in the app. When sync is enabled, deletion may be synchronized as a deletion marker; Git history and remote images may not be permanently removed.</li>
+      <li><strong>Clear local data:</strong> “Clear local data” deletes local transactions, assets, and asset sticker images, but app configuration, caches, editing drafts, and Keychain credentials may remain.</li>
+      <li><strong>Remove credentials:</strong> remove tokens and API keys separately from the Sync Configuration and AI Parsing screens. If you want credentials removed, do so before uninstalling the app.</li>
+      <li><strong>Uninstalling:</strong> uninstalling normally removes data in the app container. Whether iOS deletes Keychain items on uninstall is controlled by the operating system and cannot be guaranteed, so do not rely on uninstalling alone to remove credentials.</li>
+      <li><strong>Remote data:</strong> the developer cannot access or delete your Gitea/GitHub repository or AI service account. You must delete repositories, commit history, images, logs, or account data through the relevant service.</li>
+    </ul>
+
+    <h2>7. Advertising, analytics, and tracking</h2>
+    <p>The current version contains no advertising SDK, third-party analytics SDK, or cross-app tracking functionality. It does not access the advertising identifier and does not sell your personal data. The developer does not use transactions, location, images, or app activity to build advertising profiles.</p>
+    <p>Git, AI, Apple Weather, or exchange-rate services that you choose to use may process network addresses, account identifiers, request logs, or submitted content under their respective policies. The developer does not control that processing.</p>
+
+    <h2>8. Hosting of this privacy page</h2>
+    <p>This privacy page itself contains no JavaScript, advertising, analytics code, or developer-set cookies. It is hosted through GitHub Pages. GitHub may process access logs and necessary network information under the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub General Privacy Statement</a>.</p>
+
+    <h2>9. Children's privacy</h2>
+    <p>The app is intended for a general audience and is not directed specifically to children under 13. The developer does not knowingly collect children's personal information through a developer-operated server. Contact the developer if you believe there is a children's privacy concern.</p>
+
+    <h2>10. Your choices and rights</h2>
+    <p>Sync, AI, weather, and notifications are optional. You can leave third-party services unconfigured, withdraw system permissions, remove credentials, delete local data, and manage remote data through the relevant third-party service.</p>
+    <p>Because the developer does not possess your ledger, repository, or AI request data, the developer generally cannot directly access, correct, or erase it. Contact the relevant service provider for data it holds. You may contact the developer about privacy questions concerning the app itself.</p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>If app functionality or data handling changes, this page will be updated along with the “last updated” date. Material changes may also be communicated in the app or release notes.</p>
+
+    <h2>12. Contact</h2>
+    <p class="contact">Developer: Feng Chenhao<br>Email: <a href="mailto:cnjosh90098@gmail.com">cnjosh90098@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>记点 Coins · Privacy Policy</p>
+  </footer>
+</main>
+</body>
+</html>
