@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>记点 Coins · 技术支持 / Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f7f7f8;
+      --surface: #ffffff;
+      --text: #1d1d1f;
+      --secondary: #56565c;
+      --link: #005fcc;
+      --border: #d8d8dc;
+      --notice: #f0f3ff;
+      --notice-border: #8191d9;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 32px auto 64px;
+      padding: 32px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+    }
+
+    h1 {
+      margin: 0 0 4px;
+      font-size: clamp(1.75rem, 5vw, 2.25rem);
+      line-height: 1.25;
+    }
+
+    h2 {
+      margin: 2.25rem 0 0.65rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+
+    h3 {
+      margin: 1.4rem 0 0.35rem;
+      font-size: 1rem;
+    }
+
+    p { margin: 0.7rem 0; }
+    ul { margin: 0.55rem 0; padding-left: 1.4rem; }
+    li { margin: 0.45rem 0; }
+
+    a {
+      color: var(--link);
+      text-underline-offset: 0.15em;
+    }
+
+    .meta {
+      margin: 0.25rem 0;
+      color: var(--secondary);
+      font-size: 0.95rem;
+    }
+
+    .language-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 1.25rem 0 2rem;
+    }
+
+    .language-nav a {
+      display: inline-block;
+      padding: 7px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .notice {
+      margin: 1.25rem 0;
+      padding: 14px 16px;
+      background: var(--notice);
+      border-left: 4px solid var(--notice-border);
+      border-radius: 8px;
+    }
+
+    .divider {
+      margin: 4rem 0;
+      border: 0;
+      border-top: 2px solid var(--border);
+    }
+
+    .contact {
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      margin-top: 3rem;
+      color: var(--secondary);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 560px) {
+      main {
+        width: 100%;
+        margin: 0;
+        padding: 24px 20px 40px;
+        border: 0;
+        border-radius: 0;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #111114;
+        --surface: #1c1c1e;
+        --text: #f5f5f7;
+        --secondary: #c2c2c7;
+        --link: #6eb4ff;
+        --border: #3a3a3c;
+        --notice: #242a42;
+        --notice-border: #9ba9f2;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <nav class="language-nav" aria-label="Language">
+    <a href="#zh">中文</a>
+    <a href="#en" lang="en">English</a>
+    <a href="privacy.html">隐私政策 / Privacy</a>
+  </nav>
+
+  <section id="zh">
+    <h1>记点（Coins）技术支持</h1>
+    <p class="meta">开发者：Feng Chenhao</p>
+    <p class="meta">最后更新：2026 年 8 月 2 日</p>
+
+    <div class="notice">
+      遇到问题、想提功能建议，或者只是想吐槽两句，都欢迎邮件联系：
+      <a class="contact" href="mailto:cnjosh90098@gmail.com">cnjosh90098@gmail.com</a>。
+      我是独立开发者，通常会在两三个工作日内回复。
+    </div>
+
+    <h2>常见问题</h2>
+
+    <h3>需要注册账号吗？</h3>
+    <p>不需要。打开就能记账，所有数据默认只保存在你的设备上。</p>
+
+    <h3>数据会不会丢？怎么备份？</h3>
+    <p>账目保存在设备本地，会随 iPhone 的整机备份（iCloud 备份或电脑备份）一起备份。如果你希望有一份独立、可读的备份，可以在「设置 → 数据同步」里配置你自己的 Git 仓库（Gitea 或 GitHub），账本会按月导出成 JSON 文件写入你的仓库。这项功能完全可选，且数据存在你自己的仓库里，不经过开发者的任何服务器。</p>
+
+    <h3>换手机了，怎么把账本带过去？</h3>
+    <p>最简单的方式是用 iPhone 的整机迁移或从备份恢复。如果你配置过 Git 同步，也可以在新设备上填入同一个仓库和令牌，账本会自动拉取合并（合并策略为「更新时间较新者优先」，并支持删除标记）。</p>
+
+    <h3>AI 记账要额外付费吗？</h3>
+    <p>App 本身免费、无内购。AI 识别功能需要你填入自己申请的 API Key（支持 DeepSeek、OpenAI、Gemini），费用由你和相应服务商结算，开发者不参与也不代理请求。不配置 AI 也完全不影响记账、统计和资产功能。</p>
+
+    <h3>为什么要定位权限？</h3>
+    <p>仅用于在账本页顶部通过 Apple 天气显示当地天气，请求的是「使用 App 期间」的粗略位置。拒绝该权限不影响任何记账功能，只是不显示天气。</p>
+
+    <h3>「本地网络」权限是干什么的？</h3>
+    <p>如果你的 Gitea 服务器架在家里的局域网内（比如 NAS 上），App 需要该权限才能连上它。不使用局域网同步的话可以拒绝。</p>
+
+    <h3>「我的东西」里的每日成本是怎么算的？</h3>
+    <p>用购入价格除以从购买日至今（或至结束日）的持有天数。东西用得越久，每天摊到的钱越少。</p>
+
+    <h3>怎么用截图记账？</h3>
+    <p>App 提供了「获取记账分类」和「批量记账」两个快捷指令操作。你可以在系统「快捷指令」App 里搭一条流程：截屏 → 文字识别 → 交给模型解析 → 批量入账。项目仓库中的《快捷指令-截图记账.md》有完整配方。</p>
+
+    <h3>可以删掉所有数据吗？</h3>
+    <p>可以。在「设置」里有清空本地数据的选项。如果你配置过 Git 同步，远端仓库中的历史提交需要你自行在仓库服务中删除。</p>
+
+    <h2>反馈与建议</h2>
+    <p>发邮件时如果能附上以下信息，会大幅提高定位问题的效率：</p>
+    <ul>
+      <li>iOS 版本与 iPhone 型号</li>
+      <li>App 版本号（设置页底部可见）</li>
+      <li>问题的复现步骤，以及截图或录屏</li>
+    </ul>
+
+    <h2>隐私</h2>
+    <p>完整的隐私政策见 <a href="privacy.html">隐私政策页面</a>。</p>
+
+    <h2>联系方式</h2>
+    <p class="contact">开发者：Feng Chenhao<br>邮箱：<a href="mailto:cnjosh90098@gmail.com">cnjosh90098@gmail.com</a></p>
+  </section>
+
+  <hr class="divider">
+
+  <section id="en" lang="en">
+    <h1>Coins (记点) Support</h1>
+    <p class="meta">Developer: Feng Chenhao</p>
+    <p class="meta">Last updated: August 2, 2026</p>
+
+    <div class="notice">
+      For bug reports, feature requests, or any question at all, email
+      <a class="contact" href="mailto:cnjosh90098@gmail.com">cnjosh90098@gmail.com</a>.
+      This is an indie app; replies usually arrive within two to three business days.
+    </div>
+
+    <h2>Frequently asked questions</h2>
+
+    <h3>Do I need an account?</h3>
+    <p>No. The app works immediately after install, and by default all data stays on your device.</p>
+
+    <h3>How do I back up my data?</h3>
+    <p>Records live in local device storage and are included in your iPhone's full device backup (iCloud or computer). For an independent, human-readable backup, you can configure your own Git repository (Gitea or GitHub) under Settings → Sync; the ledger is exported as monthly JSON files into your own repository. This feature is optional, and the data never passes through any server operated by the developer.</p>
+
+    <h3>How do I move my ledger to a new phone?</h3>
+    <p>The simplest route is iPhone-to-iPhone transfer or restoring from a backup. If you use Git sync, entering the same repository and token on the new device will pull and merge your ledger (last-updated-wins, with tombstones for deletions).</p>
+
+    <h3>Does AI entry cost extra?</h3>
+    <p>The app itself is free with no in-app purchases. AI parsing requires your own API key (DeepSeek, OpenAI, or Gemini); billing is between you and that provider. The developer neither proxies the request nor receives your key. Everything else in the app works without it.</p>
+
+    <h3>Why does the app ask for location?</h3>
+    <p>Only to show local weather at the top of the ledger via Apple Weather, using coarse, while-in-use location. Denying it does not affect any bookkeeping feature.</p>
+
+    <h3>What is the Local Network permission for?</h3>
+    <p>It is needed only if your Gitea server runs on your home network (for example on a NAS). Decline it if you do not use LAN sync.</p>
+
+    <h3>How is the daily cost in "My Things" calculated?</h3>
+    <p>Purchase price divided by the number of days you have owned the item (through today, or through its end date). The longer you keep something, the lower its daily cost.</p>
+
+    <h3>Can I delete everything?</h3>
+    <p>Yes — Settings includes an option to erase all local data. If you configured Git sync, commit history in your remote repository must be removed through that service.</p>
+
+    <h2>Reporting an issue</h2>
+    <p>Including the following makes diagnosis much faster:</p>
+    <ul>
+      <li>iOS version and iPhone model</li>
+      <li>App version (shown at the bottom of Settings)</li>
+      <li>Steps to reproduce, plus a screenshot or screen recording</li>
+    </ul>
+
+    <h2>Privacy</h2>
+    <p>See the full <a href="privacy.html">privacy policy</a>.</p>
+
+    <h2>Contact</h2>
+    <p class="contact">Developer: Feng Chenhao<br>Email: <a href="mailto:cnjosh90098@gmail.com">cnjosh90098@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>记点 Coins · Support</p>
+  </footer>
+</main>
+</body>
+</html>
